@@ -1,0 +1,910 @@
+[{
+  "_id": {
+    "$oid": "66a490784b88891a6671dc54"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "35wrn6d69xs",
+  "topic": "Marvel Quiz",
+  "question": "Who is the director of S.H.I.E.L.D. at the start of the Marvel Cinematic Universe (MCU)?",
+  "val1": "Nick Fury",
+  "val2": "Phil Coulson",
+  "val3": "Maria Hill",
+  "val4": "Tony Stark",
+  "Correct": "Nick Fury"
+},
+{
+  "_id": {
+    "$oid": "66a490784b88891a6671dc55"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "35wrn6d69xs",
+  "topic": "Marvel Quiz",
+  "question": "What is the real name of the superhero known as Black Widow?",
+  "val1": "Natasha Romanoff",
+  "val2": "Wanda Maximoff",
+  "val3": "Carol Danvers",
+  "val4": "Peggy Carter",
+  "Correct": "Natasha Romanoff"
+},
+{
+  "_id": {
+    "$oid": "66a490784b88891a6671dc56"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "35wrn6d69xs",
+  "topic": "Marvel Quiz",
+  "question": "Which Infinity Stone does Thanos obtain first in the MCU?",
+  "val1": "Power Stone",
+  "val2": "Space Stone",
+  "val3": "Reality Stone",
+  "val4": "Mind Stone",
+  "Correct": "Power Stone"
+},
+{
+  "_id": {
+    "$oid": "66a490784b88891a6671dc57"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "35wrn6d69xs",
+  "topic": "Marvel Quiz",
+  "question": "In which movie did Spider-Man first appear in the MCU?",
+  "val1": "Spider-Man: Homecoming",
+  "val2": "Captain America: Civil War",
+  "val3": "Avengers: Age of Ultron",
+  "val4": "Iron Man 3",
+  "Correct": "Spider-Man: Homecoming"
+},
+{
+  "_id": {
+    "$oid": "66a490784b88891a6671dc58"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "35wrn6d69xs",
+  "topic": "Marvel Quiz",
+  "question": "Who is the king of Wakanda in Black Panther?",
+  "val1": "M'Baku",
+  "val2": "Erik Killmonger",
+  "val3": "T'Chaka",
+  "val4": "T'Challa",
+  "Correct": "T'Challa"
+},
+{
+  "_id": {
+    "$oid": "66a490784b88891a6671dc59"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "35wrn6d69xs",
+  "topic": "Marvel Quiz",
+  "question": "What is the name of Thor's hammer?",
+  "val1": "Stormbreaker",
+  "val2": "Mjolnir",
+  "val3": "Gungnir",
+  "val4": "Hofund",
+  "Correct": "Mjolnir"
+},
+{
+  "_id": {
+    "$oid": "66a490784b88891a6671dc5a"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "35wrn6d69xs",
+  "topic": "Marvel Quiz",
+  "question": "Which Marvel character is known for the catchphrase \"I am Groot\"?",
+  "val1": "Rocket Raccoon",
+  "val2": "Drax",
+  "val3": "Groot",
+  "val4": "Star lord",
+  "Correct": "Groot"
+},
+{
+  "_id": {
+    "$oid": "66a490784b88891a6671dc5b"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "35wrn6d69xs",
+  "topic": "Marvel Quiz",
+  "question": "What is the name of Tony Stark's AI assistant before J.A.R.V.I.S.?",
+  "val1": "F.R.I.D.A.Y.",
+  "val2": "U.L.T.R.O.N.",
+  "val3": "E.D.I.T.H.",
+  "val4": "karen",
+  "Correct": "F.R.I.D.A.Y."
+},
+{
+  "_id": {
+    "$oid": "66a490784b88891a6671dc5c"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "35wrn6d69xs",
+  "topic": "Marvel Quiz",
+  "question": "Who becomes the new Captain America at the end of Avengers: Endgame?",
+  "val1": "Bucky Barnes",
+  "val2": "Sam Wilson",
+  "val3": "Clint Barton",
+  "val4": "Natasha Romanoff",
+  "Correct": "Sam Wilson"
+},
+{
+  "_id": {
+    "$oid": "66a490784b88891a6671dc5d"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "35wrn6d69xs",
+  "topic": "Marvel Quiz",
+  "question": "Which Marvel film was the first to be nominated for a Best Picture Oscar?",
+  "val1": "Avengers: Endgame",
+  "val2": "Black Panther",
+  "val3": "Iron Man",
+  "val4": "Guardians of the Galaxy",
+  "Correct": "Black Panther"
+},
+{
+  "_id": {
+    "$oid": "66a490784b88891a6671dc5e"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "35wrn6d69xs",
+  "topic": "Marvel Quiz",
+  "question": "What is the real name of the superhero Doctor Strange?",
+  "val1": "Stephen Strange",
+  "val2": "Bruce Banner",
+  "val3": "Peter Parker",
+  "val4": "Scott Lang",
+  "Correct": "Stephen Strange"
+},
+{
+  "_id": {
+    "$oid": "66a490784b88891a6671dc5f"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "35wrn6d69xs",
+  "topic": "Marvel Quiz",
+  "question": "Which character in the MCU has the alias Star-Lord?",
+  "val1": "Drax",
+  "val2": "Rocket",
+  "val3": "Peter Quill",
+  "val4": "Yondu",
+  "Correct": "Peter Quill"
+},
+{
+  "_id": {
+    "$oid": "66a490784b88891a6671dc60"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "35wrn6d69xs",
+  "topic": "Marvel Quiz",
+  "question": "Who is the main antagonist in the first Avengers movie?",
+  "val1": "Ultron",
+  "val2": "Loki",
+  "val3": "Thanos",
+  "val4": "Red Skull",
+  "Correct": "Loki"
+},
+{
+  "_id": {
+    "$oid": "66a490784b88891a6671dc61"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "35wrn6d69xs",
+  "topic": "Marvel Quiz",
+  "question": "What is the name of the fictional metal that is primarily found in Wakanda?",
+  "val1": "Adamantium",
+  "val2": "Vibranium",
+  "val3": "Uru",
+  "val4": "Palladium",
+  "Correct": "Vibranium"
+},
+{
+  "_id": {
+    "$oid": "66a490784b88891a6671dc62"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "35wrn6d69xs",
+  "topic": "Marvel Quiz",
+  "question": "Which character did Brie Larson portray in the MCU?",
+  "val1": "Black Widow",
+  "val2": "Scarlet Witch",
+  "val3": "Captain Marvel",
+  "val4": "Valkyrie",
+  "Correct": "Captain Marvel"
+},
+{
+  "_id": {
+    "$oid": "66a495dc79c799d68cf9754e"
+  },
+  "UploadedBy": "admin@gmail.com",
+  "key": "6pet09qcyon",
+  "topic": "Java",
+  "question": "Which company originally developed the Java programming language?",
+  "val1": "Microsoft",
+  "val2": "Sun Microsystems",
+  "val3": " IBM",
+  "val4": "Oracle",
+  "Correct": "Sun Microsystems"
+},
+{
+  "_id": {
+    "$oid": "66a495dc79c799d68cf9754f"
+  },
+  "UploadedBy": "admin@gmail.com",
+  "key": "6pet09qcyon",
+  "topic": "Java",
+  "question": "What is the file extension for a compiled Java file?",
+  "val1": ".java",
+  "val2": ".class",
+  "val3": ".exe",
+  "val4": ".jar",
+  "Correct": ".class"
+},
+{
+  "_id": {
+    "$oid": "66a495dc79c799d68cf97550"
+  },
+  "UploadedBy": "admin@gmail.com",
+  "key": "6pet09qcyon",
+  "topic": "Java",
+  "question": "Which method is the entry point of any Java program?",
+  "val1": "start()",
+  "val2": "main()",
+  "val3": "init()",
+  "val4": "run()",
+  "Correct": "main()"
+},
+{
+  "_id": {
+    "$oid": "66a495dc79c799d68cf97551"
+  },
+  "UploadedBy": "admin@gmail.com",
+  "key": "6pet09qcyon",
+  "topic": "Java",
+  "question": "Which keyword is used to create an object in Java?",
+  "val1": "new",
+  "val2": "create",
+  "val3": "instantiate",
+  "val4": "build",
+  "Correct": "new"
+},
+{
+  "_id": {
+    "$oid": "66a495dc79c799d68cf97552"
+  },
+  "UploadedBy": "admin@gmail.com",
+  "key": "6pet09qcyon",
+  "topic": "Java",
+  "question": "Which of the following is a reserved keyword in Java?",
+  "val1": "value",
+  "val2": "object",
+  "val3": "void",
+  "val4": "reference",
+  "Correct": "void"
+},
+{
+  "_id": {
+    "$oid": "66a495dc79c799d68cf97553"
+  },
+  "UploadedBy": "admin@gmail.com",
+  "key": "6pet09qcyon",
+  "topic": "Java",
+  "question": "Which concept allows Java to run on any platform without modification?",
+  "val1": "Inheritance",
+  "val2": "Encapsulation",
+  "val3": "Platform Independence",
+  "val4": "Polymorphism",
+  "Correct": "Platform Independence"
+},
+{
+  "_id": {
+    "$oid": "66a495dc79c799d68cf97554"
+  },
+  "UploadedBy": "admin@gmail.com",
+  "key": "6pet09qcyon",
+  "topic": "Java",
+  "question": "What is the default value of an instance variable of type boolean in Java?",
+  "val1": "true",
+  "val2": "flase",
+  "val3": "0",
+  "val4": "null",
+  "Correct": "false"
+},
+{
+  "_id": {
+    "$oid": "66a495dc79c799d68cf97555"
+  },
+  "UploadedBy": "admin@gmail.com",
+  "key": "6pet09qcyon",
+  "topic": "Java",
+  "question": "Which of the following is used to handle exceptions in Java?",
+  "val1": "try-catch block",
+  "val2": "if-else block",
+  "val3": "for loop",
+  "val4": "switch-case",
+  "Correct": "try-catch block"
+},
+{
+  "_id": {
+    "$oid": "66a495dc79c799d68cf97556"
+  },
+  "UploadedBy": "admin@gmail.com",
+  "key": "6pet09qcyon",
+  "topic": "Java",
+  "question": "Which of the following is not a primitive data type in Java?",
+  "val1": "int",
+  "val2": "float",
+  "val3": "String",
+  "val4": "boolean",
+  "Correct": "String"
+},
+{
+  "_id": {
+    "$oid": "66a495dc79c799d68cf97557"
+  },
+  "UploadedBy": "admin@gmail.com",
+  "key": "6pet09qcyon",
+  "topic": "Java",
+  "question": "Which keyword is used to inherit a class in Java?",
+  "val1": "implements",
+  "val2": "inherits",
+  "val3": "extends",
+  "val4": "imports",
+  "Correct": "extends"
+},
+{
+  "_id": {
+    "$oid": "66a4972179c799d68cf97558"
+  },
+  "UploadedBy": "admin@gmail.com",
+  "key": "d8puu0ix6jn",
+  "topic": "Nodejs",
+  "question": "Who is the creator of Node.js?",
+  "val1": "Ryan Dahl",
+  "val2": "Brendan Eich",
+  "val3": "Tim Berners-Lee",
+  "val4": "Guido van Rossum",
+  "Correct": "Ryan Dahl"
+},
+{
+  "_id": {
+    "$oid": "66a4972179c799d68cf97559"
+  },
+  "UploadedBy": "admin@gmail.com",
+  "key": "d8puu0ix6jn",
+  "topic": "Nodejs",
+  "question": "Which programming language is Node.js built on?",
+  "val1": "Python",
+  "val2": "Ruby",
+  "val3": "Javascript",
+  "val4": "Php",
+  "Correct": "javascript"
+},
+{
+  "_id": {
+    "$oid": "66a4972179c799d68cf9755a"
+  },
+  "UploadedBy": "admin@gmail.com",
+  "key": "d8puu0ix6jn",
+  "topic": "Nodejs",
+  "question": "What is the default package manager for Node.js?",
+  "val1": "Maven",
+  "val2": "npm",
+  "val3": "yarn",
+  "val4": "pip",
+  "Correct": "npm"
+},
+{
+  "_id": {
+    "$oid": "66a4972179c799d68cf9755b"
+  },
+  "UploadedBy": "admin@gmail.com",
+  "key": "d8puu0ix6jn",
+  "topic": "Nodejs",
+  "question": "Which module in Node.js is used to create a web server?",
+  "val1": "http",
+  "val2": "url",
+  "val3": "fs",
+  "val4": "net",
+  "Correct": "http"
+},
+{
+  "_id": {
+    "$oid": "66a4972179c799d68cf9755c"
+  },
+  "UploadedBy": "admin@gmail.com",
+  "key": "d8puu0ix6jn",
+  "topic": "Nodejs",
+  "question": "Which of the following is a Node.js framework?",
+  "val1": "laravel",
+  "val2": "spring",
+  "val3": "django",
+  "val4": "express",
+  "Correct": "express"
+},
+{
+  "_id": {
+    "$oid": "66a4972179c799d68cf9755d"
+  },
+  "UploadedBy": "admin@gmail.com",
+  "key": "d8puu0ix6jn",
+  "topic": "Nodejs",
+  "question": "Which command is used to initialize a new Node.js project?",
+  "val1": "npm start",
+  "val2": "node init",
+  "val3": "npm init",
+  "val4": "node start",
+  "Correct": "npm init"
+},
+{
+  "_id": {
+    "$oid": "66a4972179c799d68cf9755e"
+  },
+  "UploadedBy": "admin@gmail.com",
+  "key": "d8puu0ix6jn",
+  "topic": "Nodejs",
+  "question": "What does the 'fs' module in Node.js stand for?",
+  "val1": "File system",
+  "val2": "Fast Server",
+  "val3": "File Stream",
+  "val4": "Function Script",
+  "Correct": "File system"
+},
+{
+  "_id": {
+    "$oid": "66a4972179c799d68cf9755f"
+  },
+  "UploadedBy": "admin@gmail.com",
+  "key": "d8puu0ix6jn",
+  "topic": "Nodejs",
+  "question": "How do you import a module in Node.js?",
+  "val1": "import 'module';",
+  "val2": "include 'module';",
+  "val3": "require('module');",
+  "val4": "using 'module';",
+  "Correct": "require('module');"
+},
+{
+  "_id": {
+    "$oid": "66a4972179c799d68cf97560"
+  },
+  "UploadedBy": "admin@gmail.com",
+  "key": "d8puu0ix6jn",
+  "topic": "Nodejs",
+  "question": "Which method is used to read the contents of a file asynchronously in Node.js?",
+  "val1": "fs.read()",
+  "val2": "fs.readFileSync()",
+  "val3": "fs.readFile()",
+  "val4": "fs.readAsync()",
+  "Correct": "fs.readFile()"
+},
+{
+  "_id": {
+    "$oid": "66a4972179c799d68cf97561"
+  },
+  "UploadedBy": "admin@gmail.com",
+  "key": "d8puu0ix6jn",
+  "topic": "Nodejs",
+  "question": "Which of the following is a built-in Node.js module for handling events?",
+  "val1": "events",
+  "val2": "http",
+  "val3": "os",
+  "val4": "stream",
+  "Correct": "events"
+},
+{
+  "_id": {
+    "$oid": "66a73d817a63cff65a1800a5"
+  },
+  "UploadedBy": "tahatc948@gmail.com",
+  "key": "udhsfw5i9iq",
+  "topic": "ClassKeeper",
+  "question": "which language is used to build this app",
+  "val1": "ReactNative",
+  "val2": "ReactJs",
+  "val3": "NodeJs",
+  "val4": "Javascirpt",
+  "Correct": "ReactNative"
+},
+{
+  "_id": {
+    "$oid": "66a73d817a63cff65a1800a6"
+  },
+  "UploadedBy": "tahatc948@gmail.com",
+  "key": "udhsfw5i9iq",
+  "topic": "ClassKeeper",
+  "question": "who build this app",
+  "val1": "Taha",
+  "val2": "qasim",
+  "val3": "aditya",
+  "val4": "anurag",
+  "Correct": "Taha"
+},
+{
+  "_id": {
+    "$oid": "66a73d817a63cff65a1800a7"
+  },
+  "UploadedBy": "tahatc948@gmail.com",
+  "key": "udhsfw5i9iq",
+  "topic": "ClassKeeper",
+  "question": "which platform was used to deploy this app",
+  "val1": "Android Studio",
+  "val2": "Vs Code",
+  "val3": "Turbo C",
+  "val4": "MongoDb",
+  "Correct": "Android Studio"
+},
+{
+  "_id": {
+    "$oid": "66a73d817a63cff65a1800a8"
+  },
+  "UploadedBy": "tahatc948@gmail.com",
+  "key": "udhsfw5i9iq",
+  "topic": "ClassKeeper",
+  "question": "which database was used to store data for this app",
+  "val1": "Mysql",
+  "val2": "MongoDb",
+  "val3": "SqlLite",
+  "val4": "JsonServer",
+  "Correct": "JsonServer"
+},
+{
+  "_id": {
+    "$oid": "66a73d817a63cff65a1800a9"
+  },
+  "UploadedBy": "tahatc948@gmail.com",
+  "key": "udhsfw5i9iq",
+  "topic": "ClassKeeper",
+  "question": "which department attendance did this app managed",
+  "val1": "Btech",
+  "val2": "BBA",
+  "val3": "BCA",
+  "val4": "BCA+MCA",
+  "Correct": "BCA+MCA"
+},
+{
+  "_id": {
+    "$oid": "66a73d817a63cff65a1800aa"
+  },
+  "UploadedBy": "tahatc948@gmail.com",
+  "key": "udhsfw5i9iq",
+  "topic": "ClassKeeper",
+  "question": "Which section's attendance did this app managed",
+  "val1": "A",
+  "val2": "B",
+  "val3": "C",
+  "val4": "D",
+  "Correct": "C"
+},
+{
+  "_id": {
+    "$oid": "66a73d817a63cff65a1800ab"
+  },
+  "UploadedBy": "tahatc948@gmail.com",
+  "key": "udhsfw5i9iq",
+  "topic": "ClassKeeper",
+  "question": "In Which college did this app was made",
+  "val1": "IIT",
+  "val2": "IPS",
+  "val3": "IIM",
+  "val4": "Medicaps",
+  "Correct": "Medicaps"
+},
+{
+  "_id": {
+    "$oid": "66a73d817a63cff65a1800ac"
+  },
+  "UploadedBy": "tahatc948@gmail.com",
+  "key": "udhsfw5i9iq",
+  "topic": "ClassKeeper",
+  "question": "Who two were partner's in this project",
+  "val1": "Taha & Qasim",
+  "val2": "Qasim & Nirmal",
+  "val3": "Aditya & Mahima",
+  "val4": "Vanshita & rohan",
+  "Correct": "Taha & Qasim"
+},
+{
+  "_id": {
+    "$oid": "66a73d817a63cff65a1800ad"
+  },
+  "UploadedBy": "tahatc948@gmail.com",
+  "key": "udhsfw5i9iq",
+  "topic": "ClassKeeper",
+  "question": "In Which year was this project started",
+  "val1": "2020",
+  "val2": "2021",
+  "val3": "2022",
+  "val4": "2023",
+  "Correct": "2023"
+},
+{
+  "_id": {
+    "$oid": "66a73d817a63cff65a1800ae"
+  },
+  "UploadedBy": "tahatc948@gmail.com",
+  "key": "udhsfw5i9iq",
+  "topic": "ClassKeeper",
+  "question": "In Which year was this project Ended",
+  "val1": "2020",
+  "val2": "2023",
+  "val3": "2024",
+  "val4": "2019",
+  "Correct": "2024"
+},
+{
+  "_id": {
+    "$oid": "66a73e2ee1d48c131f0a488a"
+  },
+  "UploadedBy": "tahatc948@gmail.com",
+  "key": "mpty4ghlpon",
+  "topic": "JavaScript",
+  "question": "Which company developed JavaScript?",
+  "val1": "Microsoft",
+  "val2": "Sun Microsystems",
+  "val3": "Netscape",
+  "val4": "Oracle",
+  "Correct": "Netscape"
+},
+{
+  "_id": {
+    "$oid": "66a73e2ee1d48c131f0a488b"
+  },
+  "UploadedBy": "tahatc948@gmail.com",
+  "key": "mpty4ghlpon",
+  "topic": "JavaScript",
+  "question": "What is the correct syntax to declare a JavaScript variable?",
+  "val1": "var myVar;",
+  "val2": "variable myVar();",
+  "val3": "let myVar;",
+  "val4": "Both a and c",
+  "Correct": "Both a and c"
+},
+{
+  "_id": {
+    "$oid": "66a73e2ee1d48c131f0a488c"
+  },
+  "UploadedBy": "tahatc948@gmail.com",
+  "key": "mpty4ghlpon",
+  "topic": "JavaScript",
+  "question": "Which of the following is a JavaScript data type?",
+  "val1": "String",
+  "val2": "Number",
+  "val3": "Boolean",
+  "val4": "All of the above",
+  "Correct": "All of the above"
+},
+{
+  "_id": {
+    "$oid": "66a73e2ee1d48c131f0a488d"
+  },
+  "UploadedBy": "tahatc948@gmail.com",
+  "key": "mpty4ghlpon",
+  "topic": "JavaScript",
+  "question": "How do you create a function in JavaScript?",
+  "val1": "function myFunction()",
+  "val2": "def myFunction()",
+  "val3": "create myFunction()",
+  "val4": " func myFunction()",
+  "Correct": "function myFunction()"
+},
+{
+  "_id": {
+    "$oid": "66a73e2ee1d48c131f0a488e"
+  },
+  "UploadedBy": "tahatc948@gmail.com",
+  "key": "mpty4ghlpon",
+  "topic": "JavaScript",
+  "question": "Which method is used to convert a JSON string to a JavaScript object?",
+  "val1": "JSON.stringify()",
+  "val2": "JSON.parse()",
+  "val3": " JSON.toObject()",
+  "val4": "JSON.convert()",
+  "Correct": "JSON.stringify()"
+},
+{
+  "_id": {
+    "$oid": "66a73e2ee1d48c131f0a488f"
+  },
+  "UploadedBy": "tahatc948@gmail.com",
+  "key": "mpty4ghlpon",
+  "topic": "JavaScript",
+  "question": "Which symbol is used for comments in JavaScript?",
+  "val1": "//",
+  "val2": "%%",
+  "val3": "**",
+  "val4": "##",
+  "Correct": "//"
+},
+{
+  "_id": {
+    "$oid": "66a73e2ee1d48c131f0a4890"
+  },
+  "UploadedBy": "tahatc948@gmail.com",
+  "key": "mpty4ghlpon",
+  "topic": "JavaScript",
+  "question": "What is the output of typeof NaN in JavaScript?",
+  "val1": "number",
+  "val2": "NaN",
+  "val3": "undefined",
+  "val4": "onject",
+  "Correct": "number"
+},
+{
+  "_id": {
+    "$oid": "66a73e2ee1d48c131f0a4891"
+  },
+  "UploadedBy": "tahatc948@gmail.com",
+  "key": "mpty4ghlpon",
+  "topic": "JavaScript",
+  "question": "Which built-in method removes the last element from an array and returns that element",
+  "val1": "push()",
+  "val2": "pop()",
+  "val3": "shift",
+  "val4": "unshift()",
+  "Correct": "pop()"
+},
+{
+  "_id": {
+    "$oid": "66a73e2ee1d48c131f0a4892"
+  },
+  "UploadedBy": "tahatc948@gmail.com",
+  "key": "mpty4ghlpon",
+  "topic": "JavaScript",
+  "question": "What will be the output of console.log(2 + \"2\")?",
+  "val1": "22",
+  "val2": "4",
+  "val3": "NaN",
+  "val4": "undefined",
+  "Correct": "22"
+},
+{
+  "_id": {
+    "$oid": "66a73e2ee1d48c131f0a4893"
+  },
+  "UploadedBy": "tahatc948@gmail.com",
+  "key": "mpty4ghlpon",
+  "topic": "JavaScript",
+  "question": "Which of the following is not a reserved word in JavaScript?",
+  "val1": "interface",
+  "val2": "throws",
+  "val3": "program",
+  "val4": "short",
+  "Correct": "program"
+},
+{
+  "_id": {
+    "$oid": "66a73ee5e1d48c131f0a4896"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "fw0u23ilrgk",
+  "topic": "Android",
+  "question": "What is the name of the Android operating system version 10?",
+  "val1": "Pie",
+  "val2": "Oreo",
+  "val3": "Q",
+  "val4": "Lollipop",
+  "Correct": "Q"
+},
+{
+  "_id": {
+    "$oid": "66a73ee5e1d48c131f0a4897"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "fw0u23ilrgk",
+  "topic": "Android",
+  "question": "Which company developed the Android operating system?",
+  "val1": "Apple",
+  "val2": "Microsoft",
+  "val3": "Google",
+  "val4": "Samsung",
+  "Correct": "Google"
+},
+{
+  "_id": {
+    "$oid": "66a73ee5e1d48c131f0a4898"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "fw0u23ilrgk",
+  "topic": "Android",
+  "question": "What language is primarily used for Android app development?",
+  "val1": "swift",
+  "val2": "kotlin",
+  "val3": "ruby",
+  "val4": "python",
+  "Correct": "Kotlin"
+},
+{
+  "_id": {
+    "$oid": "66a73ee5e1d48c131f0a4899"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "fw0u23ilrgk",
+  "topic": "Android",
+  "question": "What does APK stand for in Android development?",
+  "val1": "Android Programming Kit",
+  "val2": "Application Package Kit",
+  "val3": "Android Package",
+  "val4": "Application Programming Kit",
+  "Correct": "Application Package Kit"
+},
+{
+  "_id": {
+    "$oid": "66a73ee5e1d48c131f0a489a"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "fw0u23ilrgk",
+  "topic": "Android",
+  "question": "What tool is used to create Android virtual devices for testing apps?",
+  "val1": "Android Emulator",
+  "val2": "Android Debug Bridge",
+  "val3": "Android Studio",
+  "val4": "Eclipse",
+  "Correct": "Android Emulator"
+},
+{
+  "_id": {
+    "$oid": "66a73ee5e1d48c131f0a489b"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "fw0u23ilrgk",
+  "topic": "Android",
+  "question": "Which Android component is used to display a user interface?",
+  "val1": "Service",
+  "val2": "Content Provider",
+  "val3": "Broadcast Receiver",
+  "val4": "Activity",
+  "Correct": "Activity"
+},
+{
+  "_id": {
+    "$oid": "66a73ee5e1d48c131f0a489c"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "fw0u23ilrgk",
+  "topic": "Android",
+  "question": "What is the file extension for a layout file in Android?",
+  "val1": ".java",
+  "val2": ".xml",
+  "val3": ".kt",
+  "val4": ".html",
+  "Correct": ".xml"
+},
+{
+  "_id": {
+    "$oid": "66a73ee5e1d48c131f0a489d"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "fw0u23ilrgk",
+  "topic": "Android",
+  "question": "Which manifest file is essential for every Android application?",
+  "val1": "build.gradle",
+  "val2": "AndroidManifest.xml",
+  "val3": "MainActivity.java",
+  "val4": "strings.xml",
+  "Correct": "AndroidManifest.xml"
+},
+{
+  "_id": {
+    "$oid": "66a73ee5e1d48c131f0a489e"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "fw0u23ilrgk",
+  "topic": "Android",
+  "question": "What is the name of the official integrated development environment (IDE) for Android development?",
+  "val1": "ntelliJ IDEA",
+  "val2": "Visual Studio Code",
+  "val3": "Android Studio",
+  "val4": "NetBeans",
+  "Correct": "Android Studio"
+},
+{
+  "_id": {
+    "$oid": "66a73ee5e1d48c131f0a489f"
+  },
+  "UploadedBy": "JANATON_DOE_male@GMAIL.COM",
+  "key": "fw0u23ilrgk",
+  "topic": "Android",
+  "question": "Which Android component is responsible for background tasks?",
+  "val1": "Activity",
+  "val2": "Service",
+  "val3": "Broadcast Receiver",
+  "val4": "Content Provider",
+  "Correct": "Service"
+}]

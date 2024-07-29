@@ -1,0 +1,195 @@
+<html>
+    <head>
+        <title>QuizOrbit</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link type="text/css" rel="stylesheet" href="../public/index.css">
+        <script>
+            setTimeout(()=>{
+            let welcomemsg=document.getElementById('welcomemsg')
+            welcomemsg.classList.add('disappear')
+            
+           },2000)
+           homelogo=()=>{
+            window.location.href="http://localhost:5000/"
+           }
+           function userportal(){
+            window.location.href="http://localhost:5000/userportal"
+           }
+           function quiz(key){
+            window.location.href=`http://localhost:5000/viewquiz?key=${key}`
+           }
+           function result(id){
+            window.location.href=`http://localhost:5000/viewresult?id=${id}`
+           }
+        </script>
+    </head>
+    <body>
+        <%if(quizuploaded=='Quiz Uploaded SuccessFully'){%>
+        <div class="bg-green-500 w-4/12 h-10 rounded-lg text-center pt-1 font-semibold mx-auto mb-2  relative mt-1 sm:w-2/12" id="welcomemsg"><%=quizuploaded%> </div>
+                 <%}else if(quizuploaded=='Response Stored'){%> 
+                    <div class="bg-green-500 w-4/12 h-10 rounded-lg text-center pt-1 font-semibold mx-auto mb-2  relative mt-1 sm:w-2/12" id="welcomemsg"><%=quizuploaded%> </div>
+                    <%}else if(quizuploaded=='undefined'){%> 
+                    <%}%>          
+        <nav class="bg-slate-200 flex flex-row" >
+            <img src="../public/images/QuizOrbit.png" class="w-24 cursor-pointer" onclick="homelogo()">
+            <div class="ml-auto flex flex-row">
+                    <button class="btn" onclick="window.location.href='/logout'">LogOut</button>
+                    <img  src="../public/images/user.png" class="w-12 h-11 mt-3 mr-3 ml-3 cursor-pointer bg-slate-950 rounded-full" onclick="userportal()">
+                    </div>
+                
+            
+        </nav>
+        <%if(quesdata!="no data"){%>
+            <div class="bg-slate-200 m-2">
+                <h1 class="font-bold text-2xl text-center">Your Quizes</h1>
+                <div class=" mt-2 flex flex-row flex-wrap" >
+                <%for(let data of qdata){%>
+                    <div class="bg-slate-200 m-3 sm:w-[475px] w-[350px]">
+                        <img src="../public/images/images.jpg" class="sm:w-[455px] w-[320px] h-[300px] sm:m-2.5 sm:ml-0 ml-1">
+                        <h1 class="m-2.5 font-bold text-xl">Topic:- <%=data[0].topic%></h1>
+                        <h1 class="m-2.5 font-bold text-xl">Uploaded By:- <%=data[0].UploadedBy%></h1>
+                        <center><button class="btn w-32 mb-2" onclick="quiz('<%=data[0].key%>')">View Quiz</button></center>
+                    </div>
+            <%}%>
+        </div>
+            </div>
+        <%}else{%>
+            
+            <%}%>
+            <%if(quesdata!="no data"){%>
+                <div class="bg-slate-200 m-2">
+                    <h1 class="font-bold text-2xl text-center">Your Quiz Responses</h1>
+                    <div class=" mt-2 flex flex-row flex-wrap" >
+                        
+                        <%if(rd!=undefined){%>
+                                <%for(let rdd of rd){%>
+                                    <div class="bg-slate-200 m-3 sm:w-[460px] w-[350px]">
+                                        <img src="../public/images/images.jpg" class="sm:w-[455px] w-[320px] h-[300px] sm:m-2.5 sm:ml-0 ml-1">
+                                    <h1 class="m-2.5 font-bold text-xl">username:- <%=rdd.username%></h1>
+                                <h1 class="m-2.5 font-bold text-xl">Key:- <%=rdd.key%></h1>
+                                <h1 class="m-2.5 font-bold text-xl">Topic:- <%=rdd.topic%></h1>
+                                <center><button class="btn w-32 mb-2" onclick="result('<%=rdd._id%>')">View result</button></center>
+                    
+                            </div>
+                            <%}%>
+                                    <%}%>
+                                    <%if(rd2!=undefined){%>
+                                    <%for(let rdd of rd2){%>
+                                        <div class="bg-slate-200 m-3 sm:w-[460px] w-[350px]">
+                                            <img src="../public/images/images.jpg" class="sm:w-[455px] w-[320px] h-[300px] sm:m-2.5 sm:ml-0 ml-1">
+                                        <h1 class="m-2.5 font-bold text-xl">username:- <%=rdd.username%></h1>
+                                    <h1 class="m-2.5 font-bold text-xl">Key:- <%=rdd.key%></h1>
+                                    <h1 class="m-2.5 font-bold text-xl">Topic:- <%=rdd.topic%></h1>
+                                    <center><button class="btn w-32 mb-2" onclick="result('<%=rdd._id%>')">View result</button></center>
+                        
+                                </div>
+                                        <%}%>
+                                        <%}%>
+                                <%if(rd3!=undefined){%>
+
+                                        <%for(let rdd of rd3){%>
+                                            <div class="bg-slate-200 m-3 sm:w-[460px] w-[350px]">
+                                                <img src="../public/images/images.jpg" class="sm:w-[455px] w-[320px] h-[300px] sm:m-2.5 sm:ml-0 ml-1">
+                                            <h1 class="m-2.5 font-bold text-xl">username:- <%=rdd.username%></h1>
+                                        <h1 class="m-2.5 font-bold text-xl">Key:- <%=rdd.key%></h1>
+                                        <h1 class="m-2.5 font-bold text-xl">Topic:- <%=rdd.topic%></h1>
+                                        <center><button class="btn w-32 mb-2" onclick="result('<%=rdd._id%>')">View result</button></center>
+                            
+                                    </div>
+                                            <%}%>
+                                <%}%>
+                                <%if(rd4!=undefined){%>
+                                            <%for(let rdd of rd4){%>
+                                                <div class="bg-slate-200 m-3 sm:w-[460px] w-[350px]">
+                                                    <img src="../public/images/images.jpg" class="sm:w-[455px] w-[320px] h-[300px] sm:m-2.5 sm:ml-0 ml-1">
+                                                <h1 class="m-2.5 font-bold text-xl">username:- <%=rdd.username%></h1>
+                                            <h1 class="m-2.5 font-bold text-xl">Key:- <%=rdd.key%></h1>
+                                            <h1 class="m-2.5 font-bold text-xl">Topic:- <%=rdd.topic%></h1>
+                                            <center><button class="btn w-32 mb-2" onclick="result('<%=rdd._id%>')">View result</button></center>
+                                
+                                        </div>
+                                                <%}%>
+                                                <%}%>
+                                                <%if(rd5!=undefined){%>
+                                                <%for(let rdd of rd5){%>
+                                                    <div class="bg-slate-200 m-3 sm:w-[460px] w-[350px]">
+                                                        <img src="../public/images/images.jpg" class="sm:w-[455px] w-[320px] h-[300px] sm:m-2.5 sm:ml-0 ml-1">
+                                                    <h1 class="m-2.5 font-bold text-xl">username:- <%=rdd.username%></h1>
+                                                <h1 class="m-2.5 font-bold text-xl">Key:- <%=rdd.key%></h1>
+                                                <h1 class="m-2.5 font-bold text-xl">Topic:- <%=rdd.topic%></h1>
+                                                <center><button class="btn w-32 mb-2" onclick="result('<%=rdd._id%>')">View result</button></center>
+                                    
+                                            </div>
+                                                    <%}%>
+                                                    <%}%>
+                                                    <%if(rd6!=undefined){%>
+                                                    <%for(let rdd of rd6){%>
+                                                        <div class="bg-slate-200 m-3 sm:w-[460px] w-[350px]">
+                                                            <img src="../public/images/images.jpg" class="sm:w-[455px] w-[320px] h-[300px] sm:m-2.5 sm:ml-0 ml-1">
+                                                        <h1 class="m-2.5 font-bold text-xl">username:- <%=rdd.username%></h1>
+                                                    <h1 class="m-2.5 font-bold text-xl">Key:- <%=rdd.key%></h1>
+                                                    <h1 class="m-2.5 font-bold text-xl">Topic:- <%=rdd.topic%></h1>
+                                                    <center><button class="btn w-32 mb-2" onclick="result('<%=rdd._id%>')">View result</button></center>
+                                        
+                                                </div>
+                                                        <%}%>
+                                                        <%}%>
+                                                        <%if(rd7!=undefined){%>
+                                                        <%for(let rdd of rd7){%>
+                                                            <div class="bg-slate-200 m-3 sm:w-[460px] w-[350px]">
+                                                                <img src="../public/images/images.jpg" class="sm:w-[455px] w-[320px] h-[300px] sm:m-2.5 sm:ml-0 ml-1">
+                                                            <h1 class="m-2.5 font-bold text-xl">username:- <%=rdd.username%></h1>
+                                                        <h1 class="m-2.5 font-bold text-xl">Key:- <%=rdd.key%></h1>
+                                                        <h1 class="m-2.5 font-bold text-xl">Topic:- <%=rdd.topic%></h1>
+                                                        <center><button class="btn w-32 mb-2" onclick="result('<%=rdd._id%>')">View result</button></center>
+                                            
+                                                    </div>
+                                                            <%}%>
+                                                            <%}%>
+
+                                                            <%if(rd8!=undefined){%>
+                                                            <%for(let rdd of rd8){%>
+                                                                <div class="bg-slate-200 m-3 sm:w-[460px] w-[350px]">
+                                                                    <img src="../public/images/images.jpg" class="sm:w-[455px] w-[320px] h-[300px] sm:m-2.5 sm:ml-0 ml-1">
+                                                                <h1 class="m-2.5 font-bold text-xl">username:- <%=rdd.username%></h1>
+                                                            <h1 class="m-2.5 font-bold text-xl">Key:- <%=rdd.key%></h1>
+                                                            <h1 class="m-2.5 font-bold text-xl">Topic:- <%=rdd.topic%></h1>
+                                                            <center><button class="btn w-32 mb-2" onclick="result('<%=rdd._id%>')">View result</button></center>
+                                                
+                                                        </div>
+                                                                <%}%>
+                                                                <%}%>
+                                
+                                
+                                <%let count=1%>
+                                
+                   
+                </div>
+                    </div>
+        <%}else{%>
+                        
+            <%}%>
+            <%if(redata!="no data"){%>
+                
+
+        <div class="bg-slate-200 m-2">
+            <h1 class="font-bold text-2xl text-center">Your Quiz Results</h1>
+            <div class=" mt-2 flex flex-row flex-wrap" >
+                <%for(let data of redata){%>
+                    <div class="bg-slate-200 m-3 sm:w-[460px] w-[350px]">
+                        <img src="../public/images/images.jpg" class="sm:w-[455px] w-[320px] h-[300px] sm:m-2.5 sm:ml-0 ml-1">
+                    <h1 class="m-2.5 font-bold text-xl">username:- <%=data.username%></h1>
+                <h1 class="m-2.5 font-bold text-xl">Key:- <%=data.key%></h1>
+                <h1 class="m-2.5 font-bold text-xl">Topic:- <%=data.topic%></h1>
+                <center><button class="btn w-32 mb-2" onclick="result('<%=data._id%>')">View result</button></center>
+    
+            </div>
+
+                    
+            <%}%>
+        </div>
+                    </div>
+                    <%}%>
+    </body>
+</html>

@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <title>QuizOrbit</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link type="text/css" rel="stylesheet" href="../public/index.css">
+        <script>
+            setTimeout(()=>{
+            let welcomemsg=document.getElementById('welcomemsg')
+            welcomemsg.classList.add('disappear')
+            
+           },2000)
+           homelogo=()=>{
+            //http://192.168.58.193:5000/
+            //http://localhost:5000/
+            window.location.href="http://localhost:5000/"
+           }
+           function quiz(key){
+            let form=document.getElementById('quizform')
+            let input=document.createElement('input')
+            let h1=document.createElement('h1')
+            let quizkey=key
+            h1.id="keycontainer"
+            h1.innerHTML=` Quiz Key:- ${quizkey}`
+            h1.classList.add('h1')
+            input.type="text"
+            input.name='quizkey'
+            input.value=key
+            input.hidden=true
+            form.appendChild(input)
+            form.appendChild(h1)
+            quizDialog.showModal()
+            quizkey=""
+           
+           }
+           function quizclose(){
+            let form=document.getElementById('quizform')
+            let h1=document.getElementById('keycontainer')
+            form.removeChild(h1)
+            quizDialog.close()
+           }
+           function userportal(){
+            window.location.href="http://localhost:5000/userportal"
+           }
+        </script>
+    </head>
+    <body>
+        <dialog id="SignupDialog" class=" w-[600px] rounded-lg">
+            <div >
+                <button class="float-right w-11 h-11 border-2 border-solid border-slate-900 rounded-full bg-slate-900 text-slate-50" onclick="SignupDialog.close()">X</button>
+                <center>
+                <img src="../public/images/QuizOrbit.png" class="w-40 h-40 border-2 border-solid border-slate-950 rounded-full mt-1 mx-24 sm:mx-56 " >
+                <form class="flex flex-col" method="post" action="/signup">
+                    <label class="font-semibold"> Username:-</label>
+                    <input class="border-2 border-solid border-slate-900 h-11  rounded-2xl my-2" type="text" name="username">
+                    <label class="font-semibold"> Email:-</label>
+                    <input class="border-2 border-solid border-slate-900 h-11 rounded-2xl my-2" type="email" name="email">
+                    <label class="font-semibold"> Password:-</label>
+                    <input class="border-2 border-solid border-slate-900 h-11 rounded-2xl my-2" type="password" name="password">
+            <button onclick="SignupDialog.close()" class="rounded-lg bg-sky-500 w-20 h-11 mt-2.5 mx-auto font-semibold underline hover:bg-sky-400 hover:font-bold">Submit</button>
+                </form>
+            </center>
+            </div>
+        </dialog>
+        
+        <dialog id="LoginDialog" class=" w-[600px] rounded-lg">
+            <div >
+                <button class="float-right w-11 h-11 border-2 border-solid border-slate-900 rounded-full bg-slate-900 text-slate-50" onclick="LoginDialog.close()">X</button>
+                <center>
+                <img src="../public/images/QuizOrbit.png" class="w-40 h-40 border-2 border-solid border-slate-950 rounded-full mt-1 mx-24 sm:mx-52">
+                <form class="flex flex-col" method="post" action="/login">
+                    <label class="font-semibold"> Email:-</label>
+                    <input class="border-2 border-solid border-slate-900 h-11 rounded-2xl my-2" type="email" name="email">
+                    <label class="font-semibold"> Password:-</label>
+                    <input class="border-2 border-solid border-slate-900 h-11 rounded-2xl my-2" type="password" name="password">
+            <button onclick="SignupDialog.close()" class="rounded-lg bg-sky-500 w-20 h-11 mt-2.5 mx-auto font-semibold underline hover:bg-sky-400 hover:font-bold">Submit</button>
+                </form>
+            </center>
+            </div>
+                    </dialog>
+
+                    <dialog id="quizDialog" class=" w-[600px] rounded-lg" >
+                        <div >
+                            <button class="float-right w-11 h-11 border-2 border-solid border-slate-900 rounded-full bg-slate-900 text-slate-50" onclick="quizclose()">X</button>
+                            <center>
+                            <img src="../public/images/QuizOrbit.png" class="w-40 h-40 border-2 border-solid border-slate-950 rounded-full mt-1 mx-24 sm:mx-52">
+                            <form class="flex flex-col" method="post" action="/attendquiz" id="quizform">
+                                <label class="font-semibold"> Quiz Code:-</label>
+                                
+                                <input class="border-2 border-solid border-slate-900 h-11 rounded-2xl my-2" type="text" name="key">
+                              <button onclick="quizclose()" class="rounded-lg bg-sky-500 w-20 h-11 mt-2.5 mx-auto font-semibold underline hover:bg-sky-400 hover:font-bold">Submit</button>
+                            </form>
+                        </center>
+                        </div>
+                                </dialog>
+                    <%if(uname=='Email Already Exists!!'){%>
+                        <div class="bg-red-500 w-4/12 h-10 rounded-lg text-center pt-1 font-semibold mx-auto relative  mb-2 mt-1 sm:w-2/12" id="welcomemsg"><%=uname%> </div>
+               
+                        <%}else if(uname && uname!='Email Already Exists!!' && uname!='Invalid Credentials' && uname!='Loged out successfully' && uname!='Kindly Login Or Signup To Create Quiz' && uname!='Kindly Login Or Signup To Take Quiz' && uname!='Invalid Key'){%>
+                            <div class="bg-green-500 w-4/12 h-10 rounded-lg text-center pt-1 font-semibold mx-auto mb-2  relative mt-1 sm:w-2/12" id="welcomemsg">Welcome <%=uname%> </div>
+                            <%}else if(uname=='Invalid Credentials'){%>
+                                <div class="bg-red-500 w-5/12 h-10 rounded-lg text-center pt-1 font-semibold mx-auto mb-2  relative mt-1 sm:w-2/12" id="welcomemsg"><%=uname%> </div>
+                                <%}else if(uname=='Loged out successfully'){%>
+                                    <div class="bg-green-500 w-7/12 h-10 rounded-lg text-center pt-1 font-semibold mx-auto mb-2  relative mt-1 sm:w-2/12" id="welcomemsg"><%=uname%> </div>
+                                    <%}else if(uname=='Kindly Login Or Signup To Create Quiz'){%>
+                                        <div class="bg-red-500 w-11/12 h-10 rounded-lg text-center pt-1 font-semibold mx-auto mb-2  relative mt-1 sm:w-3/12" id="welcomemsg"><%=uname%> </div>
+                                        <%}else if(uname=='Kindly Login Or Signup To Take Quiz'){%>
+                                            <div class="bg-red-500 w-11/12 h-10 rounded-lg text-center pt-1 font-semibold mx-auto mb-2  relative mt-1 sm:w-3/12" id="welcomemsg"><%=uname%> </div>
+                                            <%}else if(uname=='Invalid Key'){%>
+                                                <div class="bg-red-500 w-4/12 h-10 rounded-lg text-center pt-1 font-semibold mx-auto mb-2  relative mt-1 sm:w-1/12" id="welcomemsg"><%=uname%> </div>
+                                            
+                                <%}else if(uname=='undefined'){%>
+                <%}%>
+                            
+        <nav class="bg-slate-200 flex flex-row">
+            <img src="../public/images/QuizOrbit.png" class="w-24 cursor-pointer" onclick="homelogo()">
+            <%if(uname && uname!='Email Already Exists!!' && uname!='Invalid Credentials' && uname!='Loged out successfully' && uname!='Kindly Login Or Signup To Create Quiz' && uname!='Kindly Login Or Signup To Take Quiz' && uname!='Invalid Key'){%>
+                <div class="ml-auto flex flex-row">
+                    <button class="btn" onclick="window.location.href='/logout'">LogOut</button>
+                    <img  src="../public/images/user.png" class="w-12 h-11 mt-3 mr-3 ml-3 cursor-pointer bg-slate-950 rounded-full" onclick="userportal()">
+                    </div>
+                <%}else{%>
+                    <div class="ml-auto">
+                        <button class="btn" onclick="SignupDialog.showModal()">SignUp</button>
+                            <button class="btn" onclick="LoginDialog.showModal()">LogIn</button>
+                        </div>
+                    <%}%>
+            
+        </nav>
+        <div class="mt-2">
+            <div class="bg-slate-200">
+            <img src="../public/images/QuizOrbit.png" class="w-72 mx-auto">
+            <div class=" justify-center flex flex-row pb-2">
+                <button class="btn w-24" onclick="window.location.href='/createquiz'">Create Quiz</button>
+               
+            </div>
+        </div>
+        <div class="bg-slate-200 mt-2">
+<h1 class="text-center font-semibold text-2xl">Available Quizes</h1>
+        </div>
+        <%let len=qdata.length%>
+        <%let start=0%>
+        <div class=" mt-2 flex flex-row flex-wrap" >
+        <%while(start< len){%>
+            <%let ques=qdata[start]%>
+            <%let tpc= uniqt[start]%>
+            <%let upd=uniqup[start] %>
+            <%let unq=uinqk[start] %>
+<div class="bg-slate-200 m-3 sm:w-[475px] w-[350px]">
+<img src="../public/images/images.jpg" class="sm:w-[455px] w-[320px] h-[300px] m-2.5">
+<h1 class="m-2.5 font-bold text-xl">Topic:- <%=tpc%></h1>
+<h1 class="m-2.5 font-bold text-xl">Uploaded By:- <%=upd%></h1>
+<center><button class="btn w-32 mb-2" onclick="quiz('<%=unq%>')">Attend Quiz</button></center>
+</div>
+        <%start=start+1%>
+        <%}%>
+    </div>
+        </div>
+    </body>
+</html>

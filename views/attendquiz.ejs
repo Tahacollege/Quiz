@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>QuizOrbit</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link type="text/css" rel="stylesheet" href="../public/index.css">
+        <script>
+            setTimeout(()=>{
+            let welcomemsg=document.getElementById('welcomemsg')
+            welcomemsg.classList.add('disappear')
+            
+           },2000)
+           homelogo=()=>{
+            window.location.href="http://localhost:5000/"
+           }
+           function userportal(){
+            window.location.href="http://localhost:5000/userportal"
+           }
+        </script>
+    </head>
+    <body>
+                          
+        <nav class="bg-slate-200 flex flex-row" >
+            <img src="../public/images/QuizOrbit.png" class="w-24 cursor-pointer" onclick="homelogo()">
+            <div class="ml-auto flex flex-row">
+                    <button class="btn" onclick="window.location.href='/logout'">LogOut</button>
+                    <img  src="../public/images/user.png" class="w-12 h-11 mt-3 mr-3 ml-3 cursor-pointer bg-slate-950 rounded-full" onclick="userportal()">
+                    </div>
+                
+            
+        </nav>
+      <div class="bg-slate-200 mt-2">
+        <h1 class="font-semibold text-2xl text-center mt-2">Topic:- <%=questions[0].topic%></h1>
+        <h1 class="font-semibold text-2xl text-center mt-2">Uploaded By:- <%=questions[0].UploadedBy%></h1>
+        <%let count=1%>
+        <form class="flex flex-col" action="/submitanswers" method="post">
+            <label class="font-semibold"> Username:-</label>
+                    <input class="border-2 border-solid border-slate-900 h-11  rounded-2xl my-2" type="text" name="username" value="<%=data.username%>">
+                    <label class="font-semibold"> Email:-</label>
+                    <input class="border-2 border-solid border-slate-900 h-11 rounded-2xl my-2" type="email" name="email" value="<%=data.email%>">
+                    <label class="font-semibold"> Enrollment Number:-</label>
+                    <input class="border-2 border-solid border-slate-900 h-11 rounded-2xl my-2" type="text" name="enrollnum">
+                    <input class="border-2 border-solid border-slate-900 h-11 rounded-2xl my-2" type="hidden" name="quizkey" value="<%=questions[0].key%>">
+                    <input class="border-2 border-solid border-slate-900 h-11 rounded-2xl my-2" type="hidden" name="topic" value="<%=questions[0].topic%>">
+        <%for(let question of questions){%>
+            <div class="border-b-2 border-solid border-slate-950 m-2 p-2">
+                <h1 class="font-bold text-xl underline">Q<%=count%>:- <%=question.question%></h1>
+                <div class="flex flex-row gap-2 ml-5 mt-5">
+                    <input class="cursor-pointer" type="radio" name="val<%=count%>" value="<%=question.val1%>"><h1 class="font-semibold"><%=question.val1%></h1>
+                </div>
+                <div class="flex flex-row gap-2 ml-5 mt-5">
+                    <input class="cursor-pointer" type="radio" name="val<%=count%>" value="<%=question.val2%>"><h1 class="font-semibold"><%=question.val2%></h1>
+                </div>
+                <div class="flex flex-row gap-2 ml-5 mt-5">
+                    <input class="cursor-pointer" type="radio" name="val<%=count%>" value="<%=question.val3%>"><h1 class="font-semibold"><%=question.val3%></h1>
+                </div>
+                <div class="flex flex-row gap-2 ml-5 mt-5 mb-2">
+                    <input class="cursor-pointer" type="radio" name="val<%=count%>" value="<%=question.val4%>"><h1 class="font-semibold"><%=question.val4%></h1>
+                </div>
+            </div>
+            <%count=count+1%>
+            <%}%>
+            <button  class="rounded-lg bg-sky-500 w-20 h-11 mb-2 mt-2.5 mx-auto font-semibold underline hover:bg-sky-400 hover:font-bold">Submit</button>
+                           
+        </form>
+      </div>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>QuizOrbit</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link type="text/css" rel="stylesheet" href="../public/index.css">
+        <script>
+            setTimeout(()=>{
+            let welcomemsg=document.getElementById('welcomemsg')
+            welcomemsg.classList.add('disappear')
+            
+           },2000)
+           homelogo=()=>{
+            window.location.href="http://localhost:5000/"
+           }
+           function userportal(){
+            window.location.href="http://localhost:5000/userportal"
+           }
+           
+           
+        </script>
+    </head>
+    <body>
+                <%if(updated){%>
+                    <div class="bg-green-500 w-4/12 h-10 rounded-lg text-center pt-1 font-semibold mx-auto mb-2  relative mt-1 sm:w-2/12" id="welcomemsg"><%=updated%> </div>
+                            
+                    <%}%>          
+        <nav class="bg-slate-200 flex flex-row" >
+            <img src="../public/images/QuizOrbit.png" class="w-24 cursor-pointer" onclick="homelogo()">
+            <div class="ml-auto flex flex-row">
+                    <button class="btn" onclick="window.location.href='/logout'">LogOut</button>
+                    <img  src="../public/images/user.png" class="w-12 h-11 mt-3 mr-3 ml-3 cursor-pointer bg-slate-950 rounded-full" onclick="userportal()">
+                    </div>
+                
+            
+        </nav>
+      <div class="bg-slate-200 mt-2">
+        <h1 class="font-semibold text-2xl text-center mt-2">Topic:- <%=questions[0].topic%></h1>
+        <h1 class="font-semibold text-2xl text-center mt-2">Uploaded By:- <%=questions[0].UploadedBy%></h1>
+        <%let count=1%>
+        <div class="flex flex-col">
+            <label class="font-semibold"> Username:-</label>
+                    <input class="border-2 border-solid border-slate-900 h-11  rounded-2xl my-2" type="text" name="username" value="<%=data.username%>">
+                    <label class="font-semibold"> Email:-</label>
+                    <input class="border-2 border-solid border-slate-900 h-11 rounded-2xl my-2" type="email" name="email" value="<%=data.email%>">
+                    <input class="border-2 border-solid border-slate-900 h-11 rounded-2xl my-2" type="hidden" name="quizkey" value="<%=questions[0].key%>">
+                    <form method="post" action="/editquestions" class="" id="questionform">
+                    <%for(let question of questions){%>
+            
+                <div class="bg-slate-200 flex flex-col " id="questions">
+                    <label class="font-semibold"> Question <%=count%>:-</label>
+                        <input class="border-2 border-solid border-slate-900 h-11 rounded-2xl my-2" type="text" name="question1" value=" <%=question.question%>" >
+                        <input class="border-2 border-solid border-slate-900 h-11 rounded-2xl my-2" type="hidden" name="key" value=" <%=question.key%>" >
+                        <input class="border-2 border-solid border-slate-900 h-11 rounded-2xl my-2" type="hidden" name="UploadedBy" value=" <%=question.UploadedBy%>" >
+                        <input class="border-2 border-solid border-slate-900 h-11 rounded-2xl my-2" type="hidden" name="topic" value=" <%=question.topic%>" >
+                        <label class="font-semibold"> Options:-</label>
+                        <div class="flex flex-col sm:flex-row p-1">
+                            <span class="w-max flex flex-col justify-center mr-2 font-semibold">A</span><input class="border-2 border-solid border-slate-900 h-11 mr-10 w-5/6 sm:w-3/6 rounded-2xl my-2" type="text" name="val<%=count%>" value="<%=question.val1%>" >
+                            <span class="w-max flex flex-col justify-center mr-2 font-semibold">B</span><input class="border-2 border-solid border-slate-900 h-11 mr-10 w-5/6 sm:w-3/6 rounded-2xl my-2" type="text" name="val<%=count%>" value="<%=question.val2%>" >
+                            <span class="w-max flex flex-col justify-center mr-2 font-semibold">C</span><input class="border-2 border-solid border-slate-900 h-11 mr-10 w-5/6 sm:w-3/6 rounded-2xl my-2" type="text" name="val<%=count%>" value="<%=question.val3%>" >
+                            <span class="w-max flex flex-col justify-center mr-2 font-semibold">D</span><input class="border-2 border-solid border-slate-900 h-11 mr-10 w-5/6 sm:w-3/6 rounded-2xl my-2" type="text" name="val<%=count%>" value="<%=question.val4%>" >
+                            <span class="w-max flex flex-col justify-center mr-2 font-semibold">Correct Answer</span><input class="border-2 border-solid border-slate-900 h-11 mr-10 w-5/6 sm:w-3/6 rounded-2xl my-2" type="text" name="val<%=count%>" value="<%=question.Correct%>" >
+                        
+                        </div>
+                </div>
+                
+            
+
+
+            <%count=count+1%>
+            <%}%>
+        </form>
+            <div class=" flex flex-row justify-center gap-3">
+                <button class="rounded-lg bg-sky-500 w-32 h-11 mt-2.5 font-semibold underline hover:bg-sky-400 hover:font-bold" form="questionform">Submit</button>
+               </div>            
+        </div>
+      </div>
+    </body>
+</html>

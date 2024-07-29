@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <title>QuizOrbit</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link type="text/css" rel="stylesheet" href="../public/index.css">
+        <script>
+            setTimeout(()=>{
+            let welcomemsg=document.getElementById('welcomemsg')
+            welcomemsg.classList.add('disappear')
+            
+           },2000)
+           var count=2
+           function addquestion(){
+            
+            let form=document.getElementById('questionform')
+            let div=document.createElement('div')
+            let label=document.createElement('label')
+            label.innerText=`Question ${count}:-`
+            label.classList.add('label')
+            let input=document.createElement('input')
+            input.type="text"
+            input.name=`question${count}`
+            input.classList.add('input')
+            input.required
+            let label2=document.createElement('label')
+            label2.innerText='Options:-'
+            label2.classList.add('label')
+            div.classList.add('divclass')
+            let div2=document.createElement('div')
+            div2.classList.add('radiocontainer')
+            let span1=document.createElement('span')
+            span1.innerText='A'
+            span1.classList.add('span')
+            let radio1=document.createElement('input')
+            radio1.type='text'
+            radio1.required=true
+            radio1.name=`val${count}1`
+            radio1.classList.add('radio')
+            let span2=document.createElement('span')
+            span2.innerText='B'
+            span2.classList.add('span')
+            let radio2=document.createElement('input')
+            radio2.type='text'
+            radio2.required=true
+            radio2.name=`val${count}2`
+            radio2.classList.add('radio')
+            let span3=document.createElement('span')
+            span3.innerText='C'
+            span3.classList.add('span')
+            let radio3=document.createElement('input')
+            radio3.type='text'
+            radio3.required=true
+            radio3.name=`val${count}3`
+            radio3.classList.add('radio')
+            let span4=document.createElement('span')
+            span4.innerText='D'
+            span4.classList.add('span')
+            let radio4=document.createElement('input')
+            radio4.type='text'
+            radio4.required=true
+            radio4.name=`val${count}4`
+            radio4.classList.add('radio')
+            let span5=document.createElement('span')
+            span5.innerText='Correct Answer'
+            span5.classList.add('span')
+            let radio5=document.createElement('input')
+            radio5.type='text'
+            radio5.required=true
+            radio5.name=`val${count}5`
+            radio5.classList.add('radio')
+            div.appendChild(label)
+            div.appendChild(input)
+            div.appendChild(label2)
+            div.appendChild(div2)
+            div2.appendChild(span1)
+            div2.appendChild(radio1)
+            div2.appendChild(span2)
+            div2.appendChild(radio2)
+            div2.appendChild(span3)
+            div2.appendChild(radio3)
+            div2.appendChild(span4)
+            div2.appendChild(radio4)
+            div2.appendChild(span5)
+            div2.appendChild(radio5)
+            form.appendChild(div)
+            
+            count=count + 1
+            //alert(count)
+           }
+           homelogo=()=>{
+            window.location.href="http://localhost:5000/"
+           }
+           function userportal(){
+            window.location.href="http://localhost:5000/userportal"
+           }
+        </script>
+    </head>
+    <body>
+        
+        <nav class="bg-slate-200 flex flex-row" >
+            <img src="../public/images/QuizOrbit.png" class="w-24 cursor-pointer" onclick="homelogo()">
+            <div class="ml-auto flex flex-row">
+                    <button class="btn" onclick="window.location.href='/logout'">LogOut</button>
+                    <img  src="../public/images/user.png" class="w-12 h-11 mt-3 mr-3 ml-3 cursor-pointer bg-slate-950 rounded-full" onclick="userportal()">
+                    </div>
+                
+            
+        </nav>
+        <div class="mt-2">
+            
+        <form method="post" action="/quizquesstions" class="" id="questionform">
+            <div class="bg-slate-200 flex flex-col " id="questions">
+                <label class="font-semibold"> Quiz Heading:-</label>
+                <input class="border-2 border-solid border-slate-900 h-11 rounded-2xl my-2" type="text" name="topic" required >
+                <label class="font-semibold"> Question 1:-</label>
+                    <input class="border-2 border-solid border-slate-900 h-11 rounded-2xl my-2" type="text" name="question1" required>
+                    <label class="font-semibold"> Options:-</label>
+                    <div class="flex flex-col sm:flex-row p-1">
+                        <span class="w-max flex flex-row sm:flex-col justify-center mr-2 font-semibold">A:- </span><input class="border-2 border-solid border-slate-900 h-11 mr-10 w-5/6 sm:w-3/6 rounded-2xl my-2" type="text" name="val1" required>
+                        <span class="w-max flex flex-row sm:flex-col justify-center mr-2 font-semibold">B:- </span><input class="border-2 border-solid border-slate-900 h-11 mr-10 w-5/6 sm:w-3/6 rounded-2xl my-2" type="text" name="val2" required>
+                        <span class="w-max flex flex-row sm:flex-col justify-center mr-2 font-semibold">C:- </span><input class="border-2 border-solid border-slate-900 h-11 mr-10 w-5/6 sm:w-3/6 rounded-2xl my-2" type="text" name="val3" required>
+                        <span class="w-max flex flex-row sm:flex-col justify-center mr-2 font-semibold">D:- </span><input class="border-2 border-solid border-slate-900 h-11 mr-10 w-5/6 sm:w-3/6 rounded-2xl my-2" type="text" name="val4" required>
+                        <span class="w-max flex flex-row sm:flex-col justify-center mr-2 font-semibold">Correct Answer</span><input class="border-2 border-solid border-slate-900 h-11 mr-10 w-5/6 sm:w-3/6 rounded-2xl my-2" type="text" name="val5" required>
+                    
+                    </div>
+            </div>
+            
+        </form>
+        
+        <div class=" flex flex-row justify-center gap-3">
+            <button class="rounded-lg bg-sky-500 w-32 h-11 mt-2.5 font-semibold underline hover:bg-sky-400 hover:font-bold" form="questionform">Submit</button>
+            <button onclick="addquestion()" class="rounded-lg bg-sky-500 w-32 h-11 mt-2.5 font-semibold underline hover:bg-sky-400 hover:font-bold">Add Question</button>
+        </div>
+        </div>
+    </body>
+</html>
