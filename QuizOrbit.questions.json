@@ -907,4 +907,144 @@
   "val3": "Broadcast Receiver",
   "val4": "Content Provider",
   "Correct": "Service"
+},
+{
+  "_id": {
+    "$oid": "66a7d88984d12778270576f3"
+  },
+  "UploadedBy": "pk@gmail.com",
+  "key": "dlga8uk1ppk",
+  "topic": "Web development",
+  "question": "Which HTML tag is used to define an unordered list?",
+  "val1": "<ol>",
+  "val2": "<ul>",
+  "val3": "<li>",
+  "val4": "<list>",
+  "Correct": "<ul>"
+},
+{
+  "_id": {
+    "$oid": "66a7d88984d12778270576f4"
+  },
+  "UploadedBy": "pk@gmail.com",
+  "key": "dlga8uk1ppk",
+  "topic": "Web development",
+  "question": "What does CSS stand for?",
+  "val1": "Computer Style Sheets",
+  "val2": "Colorful Style Sheets",
+  "val3": "Creative Style Sheets",
+  "val4": "Cascading Style Sheets",
+  "Correct": "Cascading Style Sheets"
+},
+{
+  "_id": {
+    "$oid": "66a7d88984d12778270576f5"
+  },
+  "UploadedBy": "pk@gmail.com",
+  "key": "dlga8uk1ppk",
+  "topic": "Web development",
+  "question": "Which of the following is not a JavaScript data type?",
+  "val1": "String",
+  "val2": "Boolean",
+  "val3": "Float",
+  "val4": "All of the above",
+  "Correct": "Float"
+},
+{
+  "_id": {
+    "$oid": "66a7d88984d12778270576f6"
+  },
+  "UploadedBy": "pk@gmail.com",
+  "key": "dlga8uk1ppk",
+  "topic": "Web development",
+  "question": "Which property is used in CSS to change the text color of an element?",
+  "val1": "font-color",
+  "val2": "color",
+  "val3": "text-color",
+  "val4": "font-style",
+  "Correct": "color"
+},
+{
+  "_id": {
+    "$oid": "66a7d88984d12778270576f7"
+  },
+  "UploadedBy": "pk@gmail.com",
+  "key": "dlga8uk1ppk",
+  "topic": "Web development",
+  "question": "What does the href attribute in the <a> tag specify?",
+  "val1": "The text to be displayed",
+  "val2": "The URL of the page the link goes to",
+  "val3": "The location of the image",
+  "val4": "The font style",
+  "Correct": "The URL of the page the link goes to"
+},
+{
+  "_id": {
+    "$oid": "66a7d88984d12778270576f8"
+  },
+  "UploadedBy": "pk@gmail.com",
+  "key": "dlga8uk1ppk",
+  "topic": "Web development",
+  "question": "Which of the following is used to create a responsive web design?",
+  "val1": "Bootstrap",
+  "val2": "Angular",
+  "val3": "React",
+  "val4": "Nodejs",
+  "Correct": "Bootstrap"
+},
+{
+  "_id": {
+    "$oid": "66a7d88984d12778270576f9"
+  },
+  "UploadedBy": "pk@gmail.com",
+  "key": "dlga8uk1ppk",
+  "topic": "Web development",
+  "question": "Which HTML attribute is used to define inline styles?",
+  "val1": "style",
+  "val2": "class",
+  "val3": "styles",
+  "val4": "font",
+  "Correct": "style"
+},
+{
+  "_id": {
+    "$oid": "66a7d88984d12778270576fa"
+  },
+  "UploadedBy": "pk@gmail.com",
+  "key": "dlga8uk1ppk",
+  "topic": "Web development",
+  "question": "In JavaScript, which method is used to write HTML output?",
+  "val1": "document.write()",
+  "val2": "console.log()",
+  "val3": "window.alert()",
+  "val4": "innerHTML()",
+  "Correct": "document.write()"
+},
+{
+  "_id": {
+    "$oid": "66a7d88984d12778270576fb"
+  },
+  "UploadedBy": "pk@gmail.com",
+  "key": "dlga8uk1ppk",
+  "topic": "Web development",
+  "question": "Which of the following is used to fetch data from a server in JavaScript?",
+  "val1": "alert()",
+  "val2": "fetch()",
+  "val3": "console.log()",
+  "val4": "prompt()",
+  "Correct": "fetch()"
+},
+{
+  "_id": {
+    "$oid": "66a7d88984d12778270576fc"
+  },
+  "UploadedBy": "pk@gmail.com",
+  "key": "dlga8uk1ppk",
+  "topic": "Web development",
+  "question": "Which version of HTML introduced the <video> and <audio> elements?",
+  "val1": "HTML 4",
+  "val2": "HTML 4.0",
+  "val3": "HTML 5",
+  "val4": "XHTML",
+  "Correct": "HTML 5"
 }]
